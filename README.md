@@ -6,4 +6,5 @@ To showcase my web development skills
 ## Website
 https://clstanton.github.io/who-dat/
 
-## Contribution
+## Screen Shot
+![](../assets/images/who-dat-screenshot.png)
