@@ -7,4 +7,4 @@ To showcase my web development skills
 https://clstanton.github.io/who-dat/
 
 ## Screen Shot
-![](who-dat-screenshot.png)
+![](/assets/images/who-dat-screenshot.png)
