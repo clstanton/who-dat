@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* apply styles to all */
@@ -25,14 +26,9 @@ header h1 {
     margin: 0;
 }
 
-header nav {
-   
-}
-
 header nav ul {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -50,7 +46,7 @@ header a {
 .hero {
     background-image: url("../assets/images/Micah Ilbery_Holo_YEJkRw.jpg");
     background-size: auto;
-    background-position: 0 54%;
+    background-position: 8% 54%;
     background-attachment: relative;
     display: flex;
     flex-wrap: wrap;
@@ -59,5 +55,42 @@ header a {
 }
 
 section {
-    padding: 60px;
+    padding: 70px;
+}
+
+.section-flex {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-flex h2 {
+    display: inline-flex;
+    width: 150px;
+    border-right: 2px solid;
+    border-color: #696969;
+    text-align: right;
+    margin: 50px;
+}
+
+.p-flex {
+    display: inline-flex;
+    text-align: left;
+ 
+}
+
+.contact-flex ul {
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.contact-flex ul a {
+    text-decoration: none;
+    color: #696969;
+    border-bottom: 2px solid;
+    border-color: #696969;
+    padding: 2px 30px;
+    justify-content: flex-start;
 }
