@@ -73,50 +73,71 @@ header nav ul li a {
 /* section style */
 .div-flex {
     display: flex;
-    margin: 90px;
-    justify-content: flex-start;
+    margin: 50px;
 }
 
 .title-flex {
-    width: 30%;
+    width: 15%;
+    text-align: right;
+    padding: 20px;
 }
 
 .content-flex {
+    width: 85%;
     font-size: 18px;
+    border-left: 3px solid #fa5306;
+    padding: 20px;
 }
 
 /* work section style */
-.work-grid-wrapper {
+.content-flex {
+    display: flex;
     width: 100%;
 }
 
 .work-grid-container {
     display: grid;
+    width: 100%;
+    height: 600px;
     grid-gap: 10px;
-    /* repeat(iterator, size) */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
 
-.work-grid-item {
-    padding: 15px 0;
-    border: 2px solid #fa5306;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.grid-item {
+    border: 3px solid #fa5306;
+    border-radius: 15px;
+    padding: 15px;
+    position: relative;
 }
 
-/* specific match */
-#grid-item-run-buddy {
+.project-name {
+    background-color: #fca607;
+    padding: 15px;
+    color: #fa5306;
+    border-radius: 15px;
+    width: 175px;
+    position: relative;
+    top: 110px;
+}
+#project-name-1 {
+    position: relative;
+    top: 310px;
+}
+
+/* project-specific grid info */
+#grid-item-1 {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
+    background-image: url("../assets/images/run-buddy-screenshot_REV3.jpg");
+    background-size: cover;
 }
 
-.grid-item {
-    grid-column: 1 / span 1;
-    grid-row: 3 / span 1;
-    border: 2px solid #fa5306;
-    color: #fa5306;
+#grid-item-2 {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    background-image: url("../assets/images/vacation-planner.jpg");
+    background-size: cover;
 }
 
 /* contact section style */
