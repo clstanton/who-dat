@@ -117,13 +117,24 @@ header nav ul li a {
     color: #fa5306;
     border-radius: 15px;
     width: 175px;
-    position: relative;
-    top: 110px;
+    position: absolute;
+    top: 120px;
 }
 #project-name-1 {
-    position: relative;
-    top: 310px;
+    position: absolute;
+    top: 320px;
 }
+
+/* help w/ clickable background image https://stackoverflow.com/questions/30130899/html-css-clickable-background-image */
+.project-image {
+    background-size: 100% 100%;
+    display:block;
+    position: relative;
+    height: 100%;
+    overflow:hidden;
+    text-indent:100%;
+    white-space: nowrap;
+    }
 
 /* project-specific grid info */
 #grid-item-1 {
