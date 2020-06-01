@@ -77,24 +77,19 @@ header nav ul li a {
 }
 
 .title-flex {
-    width: 15%;
+    width: 15vw;
     text-align: right;
     padding: 20px;
 }
 
 .content-flex {
-    width: 85%;
+    width: 85vw;
     font-size: 18px;
     border-left: 3px solid #fa5306;
     padding: 20px;
 }
 
-/* work section style */
-.content-flex {
-    display: flex;
-    width: 100%;
-}
-
+/* work section general style */
 .work-grid-container {
     display: grid;
     width: 100%;
@@ -136,7 +131,7 @@ header nav ul li a {
     white-space: nowrap;
     }
 
-/* project-specific grid info */
+/* work section project-specific */
 #grid-item-1 {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
@@ -155,6 +150,8 @@ header nav ul li a {
 #contact-flex ul {
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 #contact-flex ul li a {
@@ -186,11 +183,35 @@ header nav ul li a {
     header nav ul li a {
         font-size: 20px;
     }
+
+    #work-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    #work-flex {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    #contact-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    #contact-flex ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+        margin: 10px;
+    }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 768px) {  
+    
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
