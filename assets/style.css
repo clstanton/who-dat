@@ -116,7 +116,7 @@ header nav ul li a {
     padding: 15px;
     color: #fa5306;
     border-radius: 15px;
-    width: 175px;
+    max-width: 175vw;
     position: absolute;
     top: 120px;
 }
