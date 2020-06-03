@@ -13,7 +13,7 @@ body {
 
 /* header & nav style */
 header {
-    padding: 10px 25px;
+    padding: 10px 20px;
     background-color: #fca607;
     display: flex;
     justify-content: space-around;
@@ -73,20 +73,21 @@ header nav ul li a {
 /* section style */
 .div-flex {
     display: flex;
-    margin: 50px;
+    margin: 5vw;
 }
 
 .title-flex {
-    width: 15vw;
+    width: 10vw;
     text-align: right;
-    padding: 20px;
+    margin: 3vw;
 }
 
 .content-flex {
-    width: 85vw;
-    font-size: 18px;
+    width: 90vw;
+    justify-content: flex-start;
+    font-size: 20px;
     border-left: 3px solid #fa5306;
-    padding: 20px;
+    padding: 3vw;
 }
 
 /* work section general style */
@@ -108,13 +109,14 @@ header nav ul li a {
 
 .project-name {
     background-color: #fca607;
-    padding: 15px;
+    padding: 1vw;
     color: #fa5306;
     border-radius: 15px;
     max-width: 175vw;
     position: absolute;
     top: 120px;
 }
+
 #project-name-1 {
     position: absolute;
     top: 320px;
@@ -123,11 +125,11 @@ header nav ul li a {
 /* help w/ clickable background image https://stackoverflow.com/questions/30130899/html-css-clickable-background-image */
 .project-image {
     background-size: 100% 100%;
-    display:block;
+    display: block;
     position: relative;
     height: 100%;
-    overflow:hidden;
-    text-indent:100%;
+    overflow: hidden;
+    text-indent: 100%;
     white-space: nowrap;
     }
 
@@ -157,64 +159,115 @@ header nav ul li a {
 #contact-flex ul li a {
     color: #fa5306;
     text-decoration: underline;
-    padding: 50px;
+    padding: 30px;
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-    header {
-        padding-bottom: 0;
-        justify-content: center;
-        position: relative;
-    }
-
     header h1 {
-        width: 100%;
         text-align: center;
     }
 
     header nav ul {
+        justify-content: center;
+    }
+
+    .hero h2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .content-flex, #contact-flex ul {
         margin-top: 20px;
         width: 100%;
         justify-content: center;
         margin: 10px;
     }
 
-    header nav ul li a {
-        font-size: 20px;
+    #contact-flex ul li a {
+        padding: 30px;
     }
 
-    #work-title {
-        width: 100%;
-        text-align: center;
+    .work-grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+    
+    .project-name {
+        background: none;
+        color: transparent;
+        position: static;
+        text-align: justify;
     }
 
-    #work-flex {
-        margin-top: 20px;
+    #project-name-1 {
+        position: static;
+    }
+    
+    .grid-item {
         width: 100%;
-        justify-content: center;
-        margin: 10px;
     }
 
-    #contact-title {
-        width: 100%;
-        text-align: center;
+    #grid-item-1 {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+    
+    #grid-item-2 {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
     }
 
-    #contact-flex ul {
-        margin-top: 20px;
-        width: 100%;
-        justify-content: center;
-        margin: 10px;
+    #grid-item-3 {
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
+    }
+
+    #grid-item-4 {
+        grid-column: 1 / span 1;
+        grid-row: 4 / span 1;
+    }
+
+    #grid-item-5 {
+        grid-column: 1 / span 1;
+        grid-row: 5 / span 1;
+    }
+
+    #grid-item-6 {
+        grid-column: 1 / span 1;
+        grid-row: 6 / span 1;
     }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px) {  
+@media screen and (max-width: 768px) {   
+    .title-flex {
+        width: 20vw;
+    }
     
+    .content-flex {
+        width: 80vw;
+    }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-
+    .div-flex {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    
+    .title-flex {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .content-flex {
+        text-align: center;
+        border-top: 3px solid #fa5306;
+        border-left: none;
+        width: 100%;
+        margin: 0px
+    }
 }
